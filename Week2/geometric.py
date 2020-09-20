@@ -26,6 +26,7 @@ def sumProb(N,p):
 def approxEntropy(N,p):
 	"""
 	Entropy của nguồn thông tin: H(N) = -P(1)*log(P(1)) - P(2)*log(P(2)) + ... - P(N)*log(P(N))
+									  = log(1/p) * (1 - (1-p)^N) + (1-p)/p * log(1/(1-p))
 	H(N) là một dãy dương, tăng và có giới hạn là entropy của BNN hình học
 	Hàm approxEntropy trả về giá trị trung bình lượng tin của tất cả các symbol từ 1 đến N 
 	Do đó, khi N càng lớn, hàm approxEntropy sẽ tiến đến entropy của BNN hình học
